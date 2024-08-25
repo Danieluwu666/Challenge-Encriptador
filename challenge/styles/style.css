@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --color-primario: #151515 ;
+    --color-secundario: #4697B3 ;
+    --color-terciario:  white ;
+    --color-cuaternario:#272727;
+   
+
+
+    --fuente-montserrat:"Montserrat", sans-serif;
+    --fuente-pt:"PT Serif", serif;
+   
+} 
+
+*{
+    padding: 0%;
+    margin: 0%;
+   
+}
+
+
+body{
+
+    background-color:var(--color-primario) ;
+    box-sizing: border-box;
+    
+    
+    
+}
+.header{
+    
+height: 60px;
+    
+}
+.logo{
+
+    width:10%;
+    padding-top: 10px;
+    margin-left: 10px;
+
+
+}
+
+.contenido{
+    display: flex;
+    margin-bottom: 6%;
+    margin-left: 15%;
+  
+
+}
+
+.area-de-texto{
+    background-color: var(--color-primario);
+    border: none;
+    color:var(--color-secundario) ;
+    margin-top: 17%;
+    text-transform: lowercase;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+   
+}
+::placeholder{
+    color: var(--color-secundario);}
+    .area-de-texto:focus{
+    outline: none;
+    }
+   
+.contenido_resultado_contenedor{
+    position: relative;
+    width: auto;
+    height: auto;
+   
+}
+
+.area-de-texto-resultado{
+    background-color: #444444;
+    width: 400px;
+    height: 850px;
+    background-image: url(/imagenes/imagen.png);
+    background-position: center;
+    background-position-y: 50px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--color-secundario);
+    margin-left: 120px; 
+    padding: 28px;
+    resize: none;
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    color: var(--color-terciario);
+
+    
+
+}
+
+.area-de-texto-resultado:focus{
+    outline: none;
+}
+
+
+.botones{
+    display: flex;
+    margin-top: 50px;
+}
+
+.boton-encriptar{
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+    border-radius:24px;
+    color: var(--color-terciario);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+
+
+}
+.boton-encriptar:hover{
+    background-color: #272727;
+    color: var(--color-secundario);
+
+}
+
+
+
+.boton-desencriptar{
+    background-color: #272727;
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    color: var(--color-secundario);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+
+
+
+}
+.boton-desencriptar:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+
+}
+
+.copiar{
+    position: absolute;
+    bottom: 36px;
+    right: 60px;
+    background-color :#444444;
+    border-radius: 24px;
+    color: var(--color-terciario);
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+
+}
+.copiar:hover{
+    background-color: #272727;
+    border: 1px solid var(--color-secundario);
+
+}
+.parrafo{
+    position: absolute;
+    bottom: 330px;
+    right: 140px;
+   font-size: large ;
+   color: var(--color-terciario);
+   
+    
+}
+.destaque{
+    display: flex;
+    margin-left: 25px;
+}
+
+
+.info{
+    color: var(--color-terciario);
+    font-family: var(--fuente-pt);
+    font-size: 1rem;
+
+
+}
+
+.footer{
+
+    background-color: var(--color-secundario);
+    padding: 24px;
+    margin-bottom: 0%;
+    color: var(--color-terciario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+    @media(max-width:1200px){
+        .body{
+            width: 100vw;
+        }
+       
+        .header{
+            padding:2%
+        }
+
+        .contenido{
+            flex-direction: column;
+            justify-content: center;
+            padding: 5%;
+           
+           
+            margin: 0%;
+            
+        }
+        .area-de-texto{
+            margin-top: 0%;
+           
+        }
+        .botones{
+            justify-content: center;
+        }
+        .info{
+            justify-content: center;
+        }
+        .area-de-texto{
+            width: 90vw;
+        }
+        .contenido_resultado_contenedor{
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .area-de-texto-resultado{
+           
+            margin: 0%;
+            margin-top: 5%;
+            width: 75vw;
+            height: 400px;
+            background-position: center;
+            
+        }
+        
+        .parrafo{
+            position: relative;
+            left: 40%;
+            bottom: 60px;
+
+        }
+
+
+
+
+
+
+    }

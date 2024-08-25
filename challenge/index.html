@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <img src="./imagenes/logo.png" alt="Se muestra el logo de la pagina que dice criptography website"class=logo>
+
+    </header>
+    <main class="contenido">
+        <section class="contenido__texto">
+            <textarea class="area-de-texto" id="" cols="50" rows="18"  placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="info">Solo letras minúculas y sin acentos.</h6>
+            </div>
+            <br>
+            <hr>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desenciptar</button>
+
+            </div>
+        </section>
+        <section class="contenido__resultado">
+            <div class="contenido_resultado_contenedor">
+                <textarea class="area-de-texto-resultado" name="" id="" cols="20" rows="10"readonly></textarea>
+                   <p class="parrafo"id="parrafo">Ningún mensaje fue<br><strong class="destaque">encontrado</strong></p>
+        
+                    <button class="copiar"id="copiar"onclick="copiarTexto()">Copiar</button>
+            
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        Desarrollado por Daniel Esteban Acosta
+     
+
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>
